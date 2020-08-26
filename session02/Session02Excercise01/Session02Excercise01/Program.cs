@@ -7,6 +7,7 @@ namespace Session02Excercise01
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
         }
     }
 }
