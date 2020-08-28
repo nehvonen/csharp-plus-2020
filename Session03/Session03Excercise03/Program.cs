@@ -18,9 +18,10 @@ namespace Session03Excercise03
 
             for (int i = 0; i < inputData.Length; i++)
             {
-                NumberStyles numberStyle = NumberStyles.Integer | NumberStyles.Float;
+                NumberStyles numberStyle = NumberStyles.Any;
+                IFormatProvider formatProvider = CultureInfo.InvariantCulture; 
 
-                bool parsed = double.TryParse(inputData[i], numberStyle, CultureInfo.InvariantCulture, out double parsedValue);
+                bool parsed = double.TryParse(inputData[i], numberStyle, formatProvider, out double parsedValue);
 
                 if (parsed == true)
                 {
@@ -29,7 +30,6 @@ namespace Session03Excercise03
                 else
                 {
                   //  numberArray[i] = null; 
-
                 }
 
                 /*/ try
