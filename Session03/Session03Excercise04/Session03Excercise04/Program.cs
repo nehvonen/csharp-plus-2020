@@ -25,14 +25,15 @@ namespace Session03Excercise04
 
 
             Object[] objectInteger = new Object[inputArray.Length];
-
+            double inputInteger;
+            List<double> numbersInput = new List<double>();
 
             for (int i = 0; i < inputArray.Length; i++)
             {
-                double inputInteger;
                 if (double.TryParse(inputArray[i], out inputInteger))
                 {
                     objectInteger[i] = inputInteger;
+                    numbersInput.Add(inputInteger);
                     Console.WriteLine(inputInteger);
                 }
                 else
@@ -42,6 +43,9 @@ namespace Session03Excercise04
             }
             Console.WriteLine("Ditt största värde är " + objectInteger.Max());
             Console.WriteLine("Ditt minsta värda är " + inputArray.Min());
+            Console.WriteLine("Summan av alla siffror är " + numbersInput.Sum());
+            Console.ReadKey();
+            
         }
     }
 }
