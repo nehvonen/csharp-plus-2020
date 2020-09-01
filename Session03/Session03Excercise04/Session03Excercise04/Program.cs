@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//    _
+//  _(.)< *QUACK* 
+// (___)
+//
 
 namespace Session03Excercise04
 {
