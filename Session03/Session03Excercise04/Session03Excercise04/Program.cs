@@ -44,8 +44,8 @@ namespace Session03Excercise04
             Console.WriteLine("Ditt största värde är " + objectInteger.Max());
             Console.WriteLine("Ditt minsta värda är " + inputArray.Min());
             Console.WriteLine("Summan av alla siffror är " + numbersInput.Sum());
+            Console.WriteLine("Medelvärdet av dina siffror är " + numbersInput.Average());
             Console.ReadKey();
-            
         }
     }
 }
